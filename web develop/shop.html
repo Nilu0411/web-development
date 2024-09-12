@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Starshoes</title>
+    <style>
+        :root {
+            --primary-color: #333;
+            --secondary-color: #ff6347;
+            --background-color: #f4f4f4;
+            --text-light: white;
+            --text-dark: #333;
+            --red-color: #ff0000;
+            --blue-color: #0000ff;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            margin: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3),
+                        6px 6px 0 rgba(0, 0, 0, 0.2),
+                        9px 9px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .logo span.red {
+            color: var(--red-color);
+        }
+
+        .logo span.blue {
+            color: var(--blue-color);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        main {
+            padding: 50px 20px;
+            background-color: var(--text-light);
+        }
+
+        .products {
+            text-align: center;
+        }
+
+        .products h2 {
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
+
+        .product-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product-item {
+            background-color: var(--background-color);
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 220px;
+        }
+
+        .product-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            background-color: var(--secondary-color);
+            color: var(--text-light);
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e05239;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="red">Star</span><span class="blue">shoes</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="s1.jpg" alt="Red Running Shoes">
+                    <h3> Shoes</h3>
+                    <p>$120.00</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <div class="product-item">
+                    <img src="s2.jpg" alt="Black Formal Shoes">
+                    <h3> Shoes</h3>
+                    <p>$150.00</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <div class="product-item">
+                    <img src="s3.jpg" alt="White Running Shoes">
+                    <h3> Shoes</h3>
+                    <p>$120.00</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <div class="product-item">
+                    <img src="s4.jpg" alt="Brown Formal Shoes">
+                    <h3>Heels</h3>
+                    <p>$150.00</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <div class="product-item">
+                    <img src="s5.jpg" alt="Classic Formal Shoes">
+                    <h3> Bag</h3>
+                    <p>$150.00</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <div class="product-item">
+                    <img src="s6.jpg" alt="Elegant Formal Shoes">
+                    <h3> Shoes</h3>
+                    <p>$150.00</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <div class="product-item">
+                    <img src="s7.jpg" alt="Stylish Running Shoes">
+                    <h3>Bag</h3>
+                    <p>$120.00</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <div class="product-item">
+                    <img src="s8.jpg" alt="Modern Formal Shoes">
+                    <h3>Bag</h3>
+                    <p>$150.00</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <div class="product-item">
+                    <img src="s9.jpg" alt="Blue Formal Shoes">
+                    <h3>Bag</h3>
+                    <p>$150.00</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <div class="product-item">
+                    <img src="s10.jpg" alt="Premium Formal Shoes">
+                    <h3> Shoes</h3>
+                    <p>$150.00</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Starshoes. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

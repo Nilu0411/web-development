@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - Starshoes</title>
+    <style>
+        :root {
+            --primary-color: #333;
+            --secondary-color: #ff6347;
+            --background-color: #f4f4f4;
+            --text-light: white;
+            --text-dark: #333;
+            --red-color: #ff0000; /* Add color definition */
+            --blue-color: #0000ff; /* Add color definition */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            margin: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3),
+                        6px 6px 0 rgba(0, 0, 0, 0.2),
+                        9px 9px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .logo span.red {
+            color: var(--red-color);
+        }
+
+        .logo span.blue {
+            color: var(--blue-color);
+        }
+
+        nav {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        main {
+            padding: 50px 20px;
+            background-color: var(--text-light);
+        }
+
+        .account-section {
+            text-align: center;
+        }
+
+        .account-section h2 {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+
+        .account-section p {
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+        }
+
+        .account-options {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .account-options a {
+            padding: 10px;
+            text-align: center;
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .account-options a:hover {
+            background-color: var(--secondary-color);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="red">Star</span><span class="blue">shoes</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="account.html">Account</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="account-section">
+            <h2>My Account</h2>
+            <p>Welcome to your account dashboard. Here you can view and manage your orders, update your details, and more.</p>
+            <div class="account-options">
+                <a href="#">View Orders</a>
+                <a href="#">Update Profile</a>
+                <a href="#">Change Password</a>
+                <a href="#">Logout</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Starshoes. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
